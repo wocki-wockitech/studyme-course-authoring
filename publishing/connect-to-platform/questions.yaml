@@ -1,0 +1,15 @@
+questions:
+  - id: 76290b39-7036-40aa-8d67-f23c8deacde7
+    slug: connect-steps
+    type: multiple_choice
+    difficulty: 1
+    text: "Что нужно сделать ПЕРЕД подключением курса к платформе?"
+    options:
+      - "Создать PR в main"
+      - "Создать Git-тег (например v1.0.0)"
+      - "Отправить email администратору"
+      - "Настроить CI/CD"
+    correct: 1
+    reference_answer: >
+      Платформа индексирует только теги. Без тега нечего индексировать —
+      connect вернёт ошибку "no tags found".

@@ -1,0 +1,15 @@
+questions:
+  - id: ff5a328e-5f8b-4cbd-abda-333fa2b0448c
+    slug: add-lesson-steps
+    type: multiple_choice
+    difficulty: 2
+    text: "Что нужно сделать чтобы новый урок появился в курсе? (выберите всё необходимое)"
+    options:
+      - "Создать папку с lesson.md"
+      - "Добавить slug в block.yaml → lessons"
+      - "Зарегистрировать в course.yaml"
+      - "Создать папку + добавить в block.yaml"
+    correct: 3
+    reference_answer: >
+      Нужно и создать папку (с lesson.md внутри), и добавить её имя
+      в block.yaml → lessons. Без второго шага платформа не увидит урок.

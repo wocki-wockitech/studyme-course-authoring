@@ -1,0 +1,14 @@
+questions:
+  - id: cb06c8a5-4bc9-4a11-ba08-cde5fc5457b4
+    slug: callout-syntax
+    type: multiple_choice
+    difficulty: 1
+    text: "Как сделать callout свёрнутым по умолчанию?"
+    options:
+      - "> [!hint]+ текст"
+      - "> [!hint]- текст"
+      - "> [!hint:collapsed] текст"
+      - "> [!hint hidden] текст"
+    correct: 1
+    reference_answer: >
+      Минус после типа (`-`) = свёрнут. Плюс (`+`) = развёрнут но сворачиваемый.

@@ -1,0 +1,14 @@
+questions:
+  - id: a81aa087-4f14-4cbb-baac-44bdd0e9d9d4
+    slug: structure-hierarchy
+    type: multiple_choice
+    difficulty: 1
+    text: "Откуда берётся slug урока?"
+    options:
+      - "Из поля slug: в lesson.md"
+      - "Из имени папки"
+      - "Генерируется автоматически"
+      - "Из course.yaml"
+    correct: 1
+    reference_answer: >
+      Slug урока = имя его папки. В YAML slug не дублируется.

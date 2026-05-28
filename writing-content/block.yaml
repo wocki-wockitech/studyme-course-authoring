@@ -1,0 +1,13 @@
+id: 89ca94a7-7738-4756-9062-26f343466324
+title: "Написание контента"
+description: "Уроки, вопросы, callouts и интерактивные виджеты"
+
+lessons:
+  - lessons-and-blocks
+  - questions
+  - callouts-and-widgets
+
+test:
+  question_count: 5
+  pass_threshold: 0.7
+  prefer_failed: true

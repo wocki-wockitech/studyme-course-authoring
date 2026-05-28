@@ -1,0 +1,10 @@
+questions:
+  - id: b81626f3-21f9-4554-a5fc-7b4551754d43
+    slug: obsidian-links
+    type: true_false
+    difficulty: 1
+    text: "Шаблон настроен на стандартные markdown-ссылки [text](path), а не на Obsidian wiki-links [[page]]."
+    correct: true
+    reference_answer: >
+      Верно. useMarkdownLinks: true в .obsidian/app.json.
+      Это нужно чтобы платформа понимала ссылки.

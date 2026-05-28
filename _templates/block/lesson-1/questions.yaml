@@ -1,0 +1,11 @@
+questions:
+  - id:
+    slug: example
+    type: multiple_choice
+    difficulty: 2
+    text: "Replace with your question."
+    options:
+      - "Option A"
+      - "Option B"
+      - "Option C"
+    correct: 0

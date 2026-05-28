@@ -1,0 +1,13 @@
+questions:
+  - id: 721c14c8-dfd6-416e-bf57-d37203ea872b
+    slug: question-index
+    type: multiple_choice
+    difficulty: 1
+    text: "Поле `correct: 1` в multiple_choice означает что правильный ответ:"
+    options:
+      - "Первый вариант (индекс 0)"
+      - "Второй вариант (индекс 1)"
+      - "Вариант с текстом '1'"
+    correct: 1
+    reference_answer: >
+      correct — это 0-based индекс. correct: 1 = второй вариант в списке options.

@@ -1,0 +1,13 @@
+id: a5b65790-baf9-4863-9726-240e6b5b0aa6
+title: "Начало работы"
+description: "Создание репозитория, структура курса, настройка Obsidian"
+
+lessons:
+  - create-repo
+  - course-structure
+  - obsidian-setup
+
+test:
+  question_count: 5
+  pass_threshold: 0.7
+  prefer_failed: true

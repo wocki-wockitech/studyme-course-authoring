@@ -1,0 +1,15 @@
+questions:
+  - id: aee834aa-538a-47ba-8287-b188971e994a
+    slug: what-is-course-repo
+    type: multiple_choice
+    difficulty: 1
+    text: "Что является source of truth для курса на StudyMe?"
+    options:
+      - "База данных платформы"
+      - "Git-репозиторий"
+      - "Файл на Google Drive"
+      - "Панель администратора"
+    correct: 1
+    reference_answer: >
+      Git-репозиторий — единственный источник правды.
+      Платформа индексирует его при публикации тега.

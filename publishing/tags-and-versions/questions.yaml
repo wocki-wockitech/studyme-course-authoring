@@ -1,0 +1,10 @@
+questions:
+  - id: f98c1006-7e05-4f15-b3ff-493215ea2080
+    slug: uuid-change
+    type: true_false
+    difficulty: 2
+    text: "Можно безопасно изменить UUID урока если переименовали папку."
+    correct: false
+    reference_answer: >
+      Нет! UUID никогда не меняется. Переименование папки меняет slug (URL),
+      но UUID должен остаться прежним. Иначе прогресс студентов потеряется.

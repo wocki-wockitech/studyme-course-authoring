@@ -1,0 +1,12 @@
+id: 075f5439-899c-4fcb-9b40-a335f21aebde
+title: "Публикация"
+description: "UUID, теги, подключение к платформе"
+
+lessons:
+  - tags-and-versions
+  - connect-to-platform
+
+test:
+  question_count: 4
+  pass_threshold: 0.7
+  prefer_failed: true
