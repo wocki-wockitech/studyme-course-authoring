@@ -9,7 +9,6 @@ default_language: ru
 languages: [ru]
 difficulty: beginner
 tags:
-  - studyme
   - authoring
   - obsidian
   - git
