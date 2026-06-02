@@ -12,7 +12,7 @@ questions:
     reference_answer: >
       correct — это 0-based индекс. correct: 1 = второй вариант в списке options.
 
-  - id:
+  - id: ec692557-93e6-4ac7-82e1-14eae3c84cb0
     slug: question-slug-scope
     type: multiple_choice
     difficulty: 2
