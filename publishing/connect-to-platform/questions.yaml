@@ -14,7 +14,7 @@ questions:
       Платформа индексирует только теги. Без тега нечего индексировать —
       connect вернёт ошибку "no tags found".
 
-  - id:
+  - id: 841ad695-f532-4f6b-8d29-dc8e75cef007
     slug: update-flow
     type: multiple_choice
     difficulty: 2

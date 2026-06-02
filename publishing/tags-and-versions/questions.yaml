@@ -9,7 +9,7 @@ questions:
       Нет! UUID никогда не меняется. Переименование папки меняет slug (URL),
       но UUID должен остаться прежним. Иначе прогресс студентов потеряется.
 
-  - id:
+  - id: c6a87670-1e84-4160-b642-64f3363f00af
     slug: platform-indexing
     type: multiple_choice
     difficulty: 1
