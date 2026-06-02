@@ -12,3 +12,18 @@ questions:
     correct: 1
     reference_answer: >
       Slug урока = имя его папки. В YAML slug не дублируется.
+
+  - id:
+    slug: block-yaml-purpose
+    type: multiple_choice
+    difficulty: 1
+    text: "Что определяет block.yaml?"
+    options:
+      - "Список всех курсов на платформе"
+      - "Название блока, порядок уроков и настройки теста"
+      - "Только название блока"
+      - "Стили оформления блока"
+    correct: 1
+    reference_answer: >
+      block.yaml содержит title, список lessons (порядок) и настройки
+      итогового теста (question_count, pass_threshold).

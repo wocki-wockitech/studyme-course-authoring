@@ -11,3 +11,18 @@ questions:
     correct: 1
     reference_answer: >
       correct — это 0-based индекс. correct: 1 = второй вариант в списке options.
+
+  - id:
+    slug: question-slug-scope
+    type: multiple_choice
+    difficulty: 2
+    text: "Slug вопроса должен быть уникальным в пределах:"
+    options:
+      - "Всего курса"
+      - "Блока"
+      - "Урока"
+      - "Платформы"
+    correct: 2
+    reference_answer: >
+      Slug вопроса уникален в пределах урока. В разных уроках
+      могут быть одинаковые slug без конфликтов.

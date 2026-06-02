@@ -69,3 +69,5 @@ graph LR
 Работает и в Obsidian (с плагином), и на платформе.
 
 > [!quiz] callout-syntax
+
+> [!quiz] quiz-callout-syntax

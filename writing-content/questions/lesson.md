@@ -69,3 +69,5 @@ questions:
 Платформа отрендерит его как интерактивный виджет с вариантами ответа.
 
 > [!quiz] question-index
+
+> [!quiz] question-slug-scope

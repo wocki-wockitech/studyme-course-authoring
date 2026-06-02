@@ -45,3 +45,5 @@ graph TD
 На платформе StudyMe это рендерится так же.
 
 > [!quiz] obsidian-links
+
+> [!quiz] assets-folder

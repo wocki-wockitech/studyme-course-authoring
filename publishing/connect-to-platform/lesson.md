@@ -44,3 +44,5 @@ https://github.com/<your-username>/studyme-course-<topic>
 Студенты увидят обновлённый контент автоматически. Их прогресс сохранится — мы матчим по UUID.
 
 > [!quiz] connect-steps
+
+> [!quiz] update-flow

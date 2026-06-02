@@ -72,3 +72,5 @@ estimated_minutes: 5
 > Переименовал папку = изменил slug. UUID при этом не меняется.
 
 > [!quiz] structure-hierarchy
+
+> [!quiz] block-yaml-purpose

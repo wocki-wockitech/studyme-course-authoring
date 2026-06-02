@@ -66,3 +66,5 @@ Block 2 (locked — откроется после теста Block 1)
 ```
 
 > [!quiz] add-lesson-steps
+
+> [!quiz] lesson-progression

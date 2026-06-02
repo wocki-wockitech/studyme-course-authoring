@@ -47,3 +47,5 @@ graph LR
 ```
 
 > [!quiz] uuid-change
+
+> [!quiz] platform-indexing

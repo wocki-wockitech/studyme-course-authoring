@@ -12,3 +12,18 @@ questions:
     correct: 1
     reference_answer: >
       Минус после типа (`-`) = свёрнут. Плюс (`+`) = развёрнут но сворачиваемый.
+
+  - id:
+    slug: quiz-callout-syntax
+    type: multiple_choice
+    difficulty: 1
+    text: "Как встроить вопрос с slug 'my-q' в текст урока?"
+    options:
+      - "> [!question] my-q"
+      - "> [!quiz] my-q"
+      - "{{quiz: my-q}}"
+      - "[quiz](my-q)"
+    correct: 1
+    reference_answer: >
+      Синтаксис встраивания вопроса: > [!quiz] slug.
+      Платформа заменяет это на интерактивный виджет.
