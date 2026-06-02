@@ -10,12 +10,12 @@ estimated_minutes: 5
 
 ## Что настроено
 
-| Настройка | Зачем |
-|-----------|-------|
-| `useMarkdownLinks: true` | Ссылки в формате `[text](path)`, не `[[wiki]]` |
-| `attachmentFolderPath: ./assets` | Картинки при drag-n-drop попадают в `assets/` |
-| `userIgnoreFilters` | Скрыты `_templates/`, `.github/`, `docs/` из file tree |
-| Templates plugin | Шаблоны для вопросов доступны через Cmd+P |
+| Настройка                        | Зачем                                                  |
+| -------------------------------- | ------------------------------------------------------ |
+| `useMarkdownLinks: true`         | Ссылки в формате `[text](path)`, не `[[wiki]]`         |
+| `attachmentFolderPath: ./assets` | Картинки при drag-n-drop попадают в `assets/`          |
+| `userIgnoreFilters`              | Скрыты `_templates/`, `.github/`, `docs/` из file tree |
+| Templates plugin                 | Шаблоны для вопросов доступны через Cmd+P              |
 
 ## Шаблоны (Templates)
 
