@@ -1,0 +1,32 @@
+id: f1a2b3c4-4444-4444-aaaa-000000000004
+difficulty: 2
+tags: [go, loops, range, functions]
+
+variants:
+  - type: code_fill
+    text:
+      ru: "Дополните функцию чтобы она возвращала сумму элементов слайса:"
+      en: "Complete the function to return the sum of slice elements:"
+    file: sum.go
+    slots:
+      - answer: ["_, v := range nums"]
+        hints:
+          - { ru: "Нужен цикл по элементам слайса", en: "Need a loop over slice elements" }
+          - { ru: "Используйте range по nums", en: "Use range over nums" }
+      - answer: ["+="]
+        hints:
+          - { ru: "Оператор для добавления значения к переменной", en: "Operator to add value to variable" }
+      - answer: ["total"]
+        hints:
+          - { ru: "Какую переменную мы накапливали?", en: "Which variable did we accumulate?" }
+
+  - type: multiple_choice
+    text:
+      ru: "Какой цикл используется для перебора элементов слайса в Go?"
+      en: "Which loop iterates over slice elements in Go?"
+    options:
+      - text: "while len(nums) > 0"
+      - text: "for _, v := range nums"
+        correct: true
+      - text: "foreach v in nums"
+      - text: "nums.each(func(v))"

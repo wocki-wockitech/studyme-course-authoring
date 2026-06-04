@@ -1,0 +1,34 @@
+id: f1a2b3c4-cccc-4444-aaaa-000000000012
+difficulty: 3
+tags: [bash, docker, kubernetes, deploy]
+
+variants:
+  - type: code_fill
+    text:
+      ru: "Дополните скрипт деплоя:"
+      en: "Complete the deploy script:"
+    file: deploy.sh
+    slots:
+      - answer: ["euo pipefail", "euxo pipefail", "eu", "e"]
+        hints:
+          - { ru: "Флаги для безопасного скрипта (exit on error)", en: "Flags for safe scripting (exit on error)" }
+      - answer: ["$TAG", "${TAG}"]
+        hints:
+          - { ru: "Тег версии из переменной", en: "Version tag from the variable" }
+      - answer: ["$TAG", "${TAG}"]
+        hints:
+          - { ru: "Тот же тег что собирали", en: "Same tag we built" }
+      - answer: ["status"]
+        hints:
+          - { ru: "Команда для ожидания завершения rollout", en: "Command to wait for rollout completion" }
+
+  - type: multiple_choice
+    text:
+      ru: "Что делает `set -e` в bash-скрипте?"
+      en: "What does `set -e` do in a bash script?"
+    options:
+      - text: { ru: "Включает verbose-вывод", en: "Enables verbose output" }
+      - text: { ru: "Прерывает скрипт при первой ошибке", en: "Stops script on first error" }
+        correct: true
+      - text: { ru: "Экспортирует все переменные", en: "Exports all variables" }
+      - text: { ru: "Включает debug-режим", en: "Enables debug mode" }
