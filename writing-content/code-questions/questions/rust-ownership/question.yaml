@@ -1,0 +1,30 @@
+id: f1a2b3c4-8888-4444-aaaa-000000000008
+difficulty: 3
+tags: [rust, ownership, move]
+
+variants:
+  - type: code_fill
+    text:
+      ru: "Что нужно написать чтобы s2 получил значение s1?"
+      en: "What should be written so s2 gets the value of s1?"
+    file: ownership.rs
+    slots:
+      - answer: ["s1", "s1.clone()"]
+        hints:
+          - { ru: "Присвоение String перемещает владение", en: "Assigning a String moves ownership" }
+          - { ru: "s1 или s1.clone() — разное поведение", en: "s1 or s1.clone() — different behavior" }
+        explanation:
+          ru: "s1 перемещает (move) владение в s2. После этого s1 невалидна. s1.clone() — глубокая копия, оба живут."
+          en: "s1 moves ownership to s2. After that s1 is invalid. s1.clone() — deep copy, both live."
+
+  - type: multiple_choice
+    text:
+      ru: "Почему println!(s1) не скомпилируется после `let s2 = s1`?"
+      en: "Why won't println!(s1) compile after `let s2 = s1`?"
+    options:
+      - text: { ru: "s1 вышла из scope", en: "s1 went out of scope" }
+      - text: { ru: "Владение переместилось в s2 (move)", en: "Ownership moved to s2 (move)" }
+        correct: true
+        feedback: { ru: "String не реализует Copy, поэтому присвоение = move.", en: "String doesn't implement Copy, so assignment = move." }
+      - text: { ru: "s1 стала mutable", en: "s1 became mutable" }
+      - text: { ru: "Ошибка типов", en: "Type error" }

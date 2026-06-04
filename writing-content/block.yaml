@@ -6,6 +6,7 @@ lessons:
   - lessons-and-blocks
   - questions
   - callouts-and-widgets
+  - code-questions
 
 test:
   question_count: 5
