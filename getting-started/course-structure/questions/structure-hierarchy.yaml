@@ -20,3 +20,17 @@ variants:
       ru: "Slug урока определяется именем его папки."
       en: "The lesson slug is determined by its folder name."
     correct: true
+
+  - type: matching
+    text:
+      ru: "Сопоставьте элемент курса и откуда берётся его slug:"
+      en: "Match the course element to where its slug comes from:"
+    pairs:
+      - left: { ru: "Урок", en: "Lesson" }
+        right: { ru: "Имя папки", en: "Folder name" }
+      - left: { ru: "Вопрос", en: "Question" }
+        right: { ru: "Поле slug: в YAML", en: "slug: field in YAML" }
+      - left: { ru: "Блок", en: "Block" }
+        right: { ru: "Имя папки", en: "Folder name" }
+    distractors:
+      - { ru: "Генерируется из title", en: "Generated from title" }

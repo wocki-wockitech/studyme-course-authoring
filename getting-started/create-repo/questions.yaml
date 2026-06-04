@@ -17,18 +17,3 @@ questions:
     reference_answer: >
       Git-репозиторий — единственный источник правды.
       Платформа индексирует его при публикации тега.
-
-  - id: 7f7fee1d-8bce-40af-8d82-57db293bffcc
-    slug: template-naming
-    type: multiple_choice
-    difficulty: 1
-    text: "Какой рекомендуемый формат имени репозитория для курса?"
-    options:
-      - text: "course-{тема}"
-      - text: "studyme-course-{тема}"
-        correct: true
-      - text: "{тема}-studyme"
-      - text: "Любое имя, формат не важен"
-    reference_answer: >
-      Рекомендуемый формат: studyme-course-{тема}.
-      Например: studyme-course-golang, studyme-course-devops.
