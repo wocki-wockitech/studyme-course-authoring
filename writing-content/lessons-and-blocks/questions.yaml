@@ -15,7 +15,7 @@ questions:
       Нужно и создать папку (с lesson.md внутри), и добавить её имя
       в block.yaml → lessons. Без второго шага платформа не увидит урок.
 
-  - id: a0a3c381-02cd-408d-b7ac-19c753ae70ad
+  - id:
     slug: lesson-progression
     type: true_false
     difficulty: 1

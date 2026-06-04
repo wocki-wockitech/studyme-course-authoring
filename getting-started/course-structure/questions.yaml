@@ -13,7 +13,7 @@ questions:
     reference_answer: >
       Slug урока = имя его папки. В YAML slug не дублируется.
 
-  - id: 0fabb21b-0fa7-4f87-8356-e81ae5e5c99d
+  - id:
     slug: block-yaml-purpose
     type: multiple_choice
     difficulty: 1

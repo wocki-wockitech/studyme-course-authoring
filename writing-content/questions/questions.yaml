@@ -14,7 +14,7 @@ questions:
       correct: true ставится на самом варианте ответа.
       Для нескольких правильных — на каждом из них.
 
-  - id: c3f0da0d-f42e-4002-8526-f0849b13436d
+  - id:
     slug: question-slug-scope
     type: multiple_choice
     difficulty: 2

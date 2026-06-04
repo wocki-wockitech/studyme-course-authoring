@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Validate course
-        uses: wocki-wockitech/studyme-course-tools@v1
+        uses: wocki-wockitech/studyme-course-tools@main
         with:
           mode: lint
           # Checks:
