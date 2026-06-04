@@ -3,7 +3,7 @@ difficulty: 2
 tags: [python, lists, indexing]
 
 variants:
-  - type: code_output
+  - type: code_fill
     text:
       ru: "Напишите что выведет каждый print:"
       en: "Write what each print will output:"
