@@ -9,17 +9,17 @@ questions:
       Верно. useMarkdownLinks: true в .obsidian/app.json.
       Это нужно чтобы платформа понимала ссылки.
 
-  - id: 2c3eb47d-3b6b-4d38-bab8-b55d80834de6
+  - id:
     slug: assets-folder
     type: multiple_choice
     difficulty: 1
     text: "Куда попадают картинки при перетаскивании в Obsidian?"
     options:
-      - "В корень репозитория"
-      - "В папку assets/"
-      - "В папку images/"
-      - "Рядом с lesson.md"
-    correct: 1
+      - text: "В корень репозитория"
+      - text: "В папку assets/"
+        correct: true
+      - text: "В папку images/"
+      - text: "Рядом с lesson.md"
     reference_answer: >
       Настройка attachmentFolderPath: ./assets перенаправляет все
       вложения в папку assets/.

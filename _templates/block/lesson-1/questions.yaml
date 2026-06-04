@@ -5,7 +5,7 @@ questions:
     difficulty: 2
     text: "Replace with your question."
     options:
-      - "Option A"
-      - "Option B"
-      - "Option C"
-    correct: 0
+      - text: "Option A"
+        correct: true
+      - text: "Option B"
+      - text: "Option C"
