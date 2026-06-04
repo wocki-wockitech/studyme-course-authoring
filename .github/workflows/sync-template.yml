@@ -20,7 +20,7 @@ jobs:
 
       - name: Fetch template and apply updates
         run: |
-          git remote add template https://github.com/wockitech/studyme-course-template.git 2>/dev/null || true
+          git remote add template https://github.com/wocki-wockitech/studyme-course-template.git 2>/dev/null || true
           git fetch template main
 
           # Перезаписать инфра-файлы из шаблона (ваш контент не трогается)
