@@ -42,5 +42,3 @@ cd studyme-course-<topic>
 - `.github/workflows/` — автоматизация (UUID, валидация)
 
 > [!quiz] what-is-course-repo
-
-> [!quiz] template-naming
