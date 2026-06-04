@@ -9,7 +9,7 @@ questions:
       Верно. useMarkdownLinks: true в .obsidian/app.json.
       Это нужно чтобы платформа понимала ссылки.
 
-  - id:
+  - id: 5f030f2d-2abc-4a6a-ad9a-d6ed58911439
     slug: assets-folder
     type: multiple_choice
     difficulty: 1
