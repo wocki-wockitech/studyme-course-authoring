@@ -14,5 +14,6 @@ questions:
       - text: "Option B"
         feedback: "Explain why this is wrong."
       - text: "Option C"
+        feedback: "Explain why this is wrong."
     reference_answer: >
       Optional explanation shown after the student answers.
