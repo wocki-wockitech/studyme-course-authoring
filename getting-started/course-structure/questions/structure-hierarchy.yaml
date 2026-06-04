@@ -1,0 +1,22 @@
+# Converted from flat questions.yaml → questions/ directory format with i18n
+id: a81aa087-4f14-4cbb-baac-44bdd0e9d9d4
+difficulty: 1
+tags: [structure, basics]
+
+variants:
+  - type: multiple_choice
+    text:
+      ru: "Откуда берётся slug урока?"
+      en: "Where does the lesson slug come from?"
+    options:
+      - text: { ru: "Из поля slug: в lesson.md", en: "From the slug: field in lesson.md" }
+      - text: { ru: "Из имени папки", en: "From the folder name" }
+        correct: true
+      - text: { ru: "Генерируется автоматически", en: "Generated automatically" }
+      - text: { ru: "Из course.yaml", en: "From course.yaml" }
+
+  - type: true_false
+    text:
+      ru: "Slug урока определяется именем его папки."
+      en: "The lesson slug is determined by its folder name."
+    correct: true
