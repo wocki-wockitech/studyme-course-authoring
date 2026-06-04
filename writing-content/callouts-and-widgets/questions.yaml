@@ -15,7 +15,7 @@ questions:
     reference_answer: >
       Минус после типа (`-`) = свёрнут. Плюс (`+`) = развёрнут но сворачиваемый.
 
-  - id:
+  - id: 80baa19a-3f6d-4337-89cc-4bc927f5f99a
     slug: quiz-callout-syntax
     type: multiple_choice
     difficulty: 1
