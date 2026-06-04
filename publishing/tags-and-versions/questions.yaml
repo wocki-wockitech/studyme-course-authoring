@@ -9,17 +9,17 @@ questions:
       Нет! UUID никогда не меняется. Переименование папки меняет slug (URL),
       но UUID должен остаться прежним. Иначе прогресс студентов потеряется.
 
-  - id: c6a87670-1e84-4160-b642-64f3363f00af
+  - id:
     slug: platform-indexing
     type: multiple_choice
     difficulty: 1
     text: "Что именно индексирует платформа?"
     options:
-      - "Каждый коммит в main"
-      - "Только Git-теги"
-      - "Только PR в main"
-      - "Все ветки"
-    correct: 1
+      - text: "Каждый коммит в main"
+      - text: "Только Git-теги"
+        correct: true
+      - text: "Только PR в main"
+      - text: "Все ветки"
     reference_answer: >
       Платформа индексирует только теги Git. Промежуточные коммиты
       в main студентам не видны.

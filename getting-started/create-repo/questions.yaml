@@ -5,26 +5,30 @@ questions:
     difficulty: 1
     text: "Что является source of truth для курса на StudyMe?"
     options:
-      - "База данных платформы"
-      - "Git-репозиторий"
-      - "Файл на Google Drive"
-      - "Панель администратора"
-    correct: 1
+      - text: "База данных платформы"
+        feedback: "Нет, БД — это индекс. Источник правды — Git."
+      - text: "Git-репозиторий"
+        correct: true
+        feedback: "Верно! Платформа индексирует репо при публикации тега."
+      - text: "Файл на Google Drive"
+        feedback: "Нет, платформа работает только с Git."
+      - text: "Панель администратора"
+        feedback: "Панель только отображает данные из Git."
     reference_answer: >
       Git-репозиторий — единственный источник правды.
       Платформа индексирует его при публикации тега.
 
-  - id: 66f11bd0-6331-441c-ada5-de638b9f9cfc
+  - id:
     slug: template-naming
     type: multiple_choice
     difficulty: 1
     text: "Какой рекомендуемый формат имени репозитория для курса?"
     options:
-      - "course-{тема}"
-      - "studyme-course-{тема}"
-      - "{тема}-studyme"
-      - "Любое имя, формат не важен"
-    correct: 1
+      - text: "course-{тема}"
+      - text: "studyme-course-{тема}"
+        correct: true
+      - text: "{тема}-studyme"
+      - text: "Любое имя, формат не важен"
     reference_answer: >
       Рекомендуемый формат: studyme-course-{тема}.
       Например: studyme-course-golang, studyme-course-devops.

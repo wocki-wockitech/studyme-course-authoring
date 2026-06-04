@@ -3,26 +3,28 @@ questions:
     slug: question-index
     type: multiple_choice
     difficulty: 1
-    text: "Поле `correct: 1` в multiple_choice означает что правильный ответ:"
+    text: "В новом формате, как отмечается правильный вариант?"
     options:
-      - "Первый вариант (индекс 0)"
-      - "Второй вариант (индекс 1)"
-      - "Вариант с текстом '1'"
-    correct: 1
+      - text: "Полем correct: <индекс> на уровне вопроса"
+      - text: "Полем correct: true на самом варианте"
+        correct: true
+        feedback: "Верно! correct: true ставится на правильном варианте."
+      - text: "Первый вариант в списке всегда правильный"
     reference_answer: >
-      correct — это 0-based индекс. correct: 1 = второй вариант в списке options.
+      correct: true ставится на самом варианте ответа.
+      Для нескольких правильных — на каждом из них.
 
-  - id: ec692557-93e6-4ac7-82e1-14eae3c84cb0
+  - id:
     slug: question-slug-scope
     type: multiple_choice
     difficulty: 2
     text: "Slug вопроса должен быть уникальным в пределах:"
     options:
-      - "Всего курса"
-      - "Блока"
-      - "Урока"
-      - "Платформы"
-    correct: 2
+      - text: "Всего курса"
+      - text: "Блока"
+      - text: "Урока"
+        correct: true
+      - text: "Платформы"
     reference_answer: >
       Slug вопроса уникален в пределах урока. В разных уроках
       могут быть одинаковые slug без конфликтов.

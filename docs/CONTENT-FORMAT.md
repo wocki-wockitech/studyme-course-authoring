@@ -162,9 +162,23 @@ questions:
 
 ```yaml
 type: multiple_choice
-options: ["A", "B", "C"]   # REQUIRED, 2-10 items
-correct: 1                 # REQUIRED, int (single) or [1,2] (multi)
+options:                       # REQUIRED, 2-10 items
+  - text: "Answer A"
+    feedback: "Why A is wrong"
+  - text: "Answer B"
+    correct: true              # mark correct option(s) with correct: true
+    feedback: "Why B is right"
+  - text: "Answer C"
+    feedback: "Why C is wrong"
 ```
+
+Single vs multi-select is determined automatically: one `correct: true` →
+radio buttons, multiple `correct: true` → checkboxes.
+
+Each option:
+- `text` (required) — displayed to the student
+- `correct` (optional, default false) — marks the correct answer(s)
+- `feedback` (optional) — shown after the student answers, explains why right/wrong
 
 ### Type: `true_false`
 

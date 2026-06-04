@@ -8,9 +8,11 @@ questions:
     difficulty: 2
     text: "Replace with your question text."
     options:
-      - "Option A"
-      - "Option B"
-      - "Option C"
-    correct: 0
+      - text: "Option A"
+        correct: true
+        feedback: "Explain why this is correct."
+      - text: "Option B"
+        feedback: "Explain why this is wrong."
+      - text: "Option C"
     reference_answer: >
       Optional explanation shown after the student answers.
