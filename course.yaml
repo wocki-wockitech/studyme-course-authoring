@@ -6,7 +6,7 @@ description: >
   от инициализации Git-репозитория до публикации через тег.
   Работа в Obsidian и Git-flow.
 default_language: ru
-languages: [ru]
+languages: [ru, en]
 difficulty: beginner
 tags:
   - authoring
