@@ -18,7 +18,7 @@ questions:
       Git-репозиторий — единственный источник правды.
       Платформа индексирует его при публикации тега.
 
-  - id: 92fd3928-0b1c-4f9f-bdcc-c3e763461a7d
+  - id: 7f7fee1d-8bce-40af-8d82-57db293bffcc
     slug: template-naming
     type: multiple_choice
     difficulty: 1
