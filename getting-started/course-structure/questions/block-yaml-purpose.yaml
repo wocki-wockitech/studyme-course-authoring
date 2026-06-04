@@ -25,3 +25,9 @@ variants:
       - { ru: "Блок (block.yaml)", en: "Block (block.yaml)" }
       - { ru: "Урок (lesson.md)", en: "Lesson (lesson.md)" }
       - { ru: "Вопрос (questions.yaml)", en: "Question (questions.yaml)" }
+
+  - type: true_false
+    text:
+      ru: "block.yaml определяет порядок уроков в блоке."
+      en: "block.yaml defines the order of lessons in a block."
+    correct: true
