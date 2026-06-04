@@ -11,7 +11,10 @@ Full schema for everything in a StudyMe course repository.
 │   ├── block.yaml              ← REQUIRED for each block
 │   └── <lesson-slug>/
 │       ├── lesson.md           ← REQUIRED for each lesson
-│       ├── questions.yaml      ← optional, but recommended
+│       ├── questions.yaml      ← optional, flat format (backward compatible)
+│       ├── questions/           ← optional, new format (one file per question)
+│       │   ├── <slug>.yaml
+│       │   └── ...
 │       └── challenges/
 │           └── <challenge-slug>/
 │               ├── challenge.yaml  ← REQUIRED for each challenge
@@ -158,6 +161,59 @@ questions:
     # ...type-specific fields...
 ```
 
+## questions/ directory (new format)
+
+Alternative to the flat `questions.yaml`. One file per question, supports
+multiple variants (alternative formulations) and i18n.
+
+```
+lesson-slug/
+├── lesson.md
+├── questions.yaml       ← flat format (backward compatible)
+└── questions/           ← new format (one file per question)
+    ├── source-of-truth.yaml
+    ├── template-naming.yaml
+    └── obsidian-links.yaml
+```
+
+Both formats can coexist — slugs are merged. Slug = file name without `.yaml`.
+
+### Question file structure
+
+```yaml
+# questions/<slug>.yaml
+id: ""                    # REQUIRED, auto-filled, never change
+difficulty: 2             # REQUIRED, 1-5
+tags: [git, basics]       # optional
+
+variants:
+  - type: multiple_choice
+    text:
+      ru: "Вопрос?"
+      en: "Question?"
+    options:
+      - text: { ru: "Вариант A", en: "Option A" }
+        correct: true
+        feedback: { ru: "Верно!", en: "Correct!" }
+      - text: { ru: "Вариант B", en: "Option B" }
+```
+
+### i18n (localized strings)
+
+Any text field accepts either:
+- **Plain string** → uses `default_language` of the course
+- **Map `{lang: text}`** → multi-language
+
+Single-language courses use plain strings — zero overhead.
+
+### Variants
+
+`variants[]` — array of alternative formulations of the same concept.
+
+- At display time, a random variant is chosen
+- Same `id` per concept — SR is tied to the question, not the variant
+- `difficulty` and `tags` are shared across all variants
+
 ### Type: `multiple_choice`
 
 ```yaml
@@ -211,6 +267,62 @@ challenge_slug: my-challenge   # REQUIRED, slug in challenges/
 ```yaml
 type: git_interactive
 challenge_slug: my-git-task    # REQUIRED, slug in challenges/
+```
+
+### Type: `ordering` (new)
+
+Students arrange items in the correct order. The correct order = order in the file.
+
+```yaml
+- type: ordering
+  text: "Arrange in correct order:"
+  items:
+    - "Step 1"
+    - "Step 2"
+    - "Step 3"
+```
+
+With i18n:
+```yaml
+- type: ordering
+  text: { ru: "Расположите в правильном порядке:", en: "Arrange correctly:" }
+  items:
+    - { ru: "Шаг 1", en: "Step 1" }
+    - { ru: "Шаг 2", en: "Step 2" }
+```
+
+Students see items in a shuffled order and rearrange them.
+
+### Type: `matching` (new)
+
+Students connect left items to right items.
+
+```yaml
+- type: matching
+  text: "Match each term:"
+  pairs:
+    - left: "Git"
+      right: "Version control"
+    - left: "PostgreSQL"
+      right: "Database"
+  distractors:          # extra items on the right (optional)
+    - "Web server"
+```
+
+### Type: `categorize` (new)
+
+Students distribute items into groups.
+
+```yaml
+- type: categorize
+  text: "Sort by category:"
+  categories:
+    - name: "SQL"
+      items: ["PostgreSQL", "MySQL"]
+    - name: "NoSQL"
+      items: ["Redis", "MongoDB"]
+  distractors:          # items not belonging to any group (optional)
+    - "Nginx"
 ```
 
 ## challenge.yaml
