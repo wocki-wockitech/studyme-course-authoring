@@ -1,6 +1,10 @@
 id: 075f5439-899c-4fcb-9b40-a335f21aebde
-title: "Публикация"
-description: "UUID, теги, подключение к платформе"
+title:
+  ru: "Публикация"
+  en: "Publishing"
+description:
+  ru: "UUID, теги, подключение к платформе"
+  en: "UUIDs, tags, connecting to the platform"
 
 lessons:
   - tags-and-versions
