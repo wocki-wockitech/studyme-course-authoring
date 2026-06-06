@@ -1,10 +1,17 @@
 id: 7c586488-93c8-469b-ae85-974a1fa324c0
 slug: course-authoring
-title: "Как создавать курсы для StudyMe"
-description: >
-  Научитесь создавать учебные курсы для платформы StudyMe:
-  от инициализации Git-репозитория до публикации через тег.
-  Работа в Obsidian и Git-flow.
+title:
+  ru: "Как создавать курсы для StudyMe"
+  en: "How to Create Courses for StudyMe"
+description:
+  ru: >
+    Научитесь создавать учебные курсы для платформы StudyMe:
+    от инициализации Git-репозитория до публикации через тег.
+    Работа в Obsidian и Git-flow.
+  en: >
+    Learn how to create courses for the StudyMe platform:
+    from initializing a Git repository to publishing via tags.
+    Working with Obsidian and Git-flow.
 default_language: ru
 languages: [ru, en]
 difficulty: beginner

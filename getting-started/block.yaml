@@ -1,6 +1,10 @@
 id: a5b65790-baf9-4863-9726-240e6b5b0aa6
-title: "Начало работы"
-description: "Создание репозитория, структура курса, настройка Obsidian"
+title:
+  ru: "Начало работы"
+  en: "Getting Started"
+description:
+  ru: "Создание репозитория, структура курса, настройка Obsidian"
+  en: "Repository setup, course structure, Obsidian configuration"
 
 lessons:
   - create-repo
