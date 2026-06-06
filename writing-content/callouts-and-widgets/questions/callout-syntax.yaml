@@ -1,0 +1,23 @@
+# Converted from flat questions.yaml → questions/ directory format with i18n
+id: cb06c8a5-4bc9-4a11-ba08-cde5fc5457b4
+difficulty: 1
+tags: []
+
+variants:
+  - type: multiple_choice
+    text:
+      ru: "Как сделать callout свёрнутым по умолчанию?"
+      en: "How do you make a callout collapsed by default?"
+    options:
+      - text: { ru: "> [!hint]+ текст", en: "> [!hint]+ text" }
+        feedback: { ru: "Плюс означает развёрнутый но сворачиваемый.", en: "Plus means expanded but collapsible." }
+      - text: { ru: "> [!hint]- текст", en: "> [!hint]- text" }
+        correct: true
+        feedback: { ru: "Минус после типа = свёрнут по умолчанию.", en: "Minus after the type = collapsed by default." }
+      - text: { ru: "> [!hint:collapsed] текст", en: "> [!hint:collapsed] text" }
+      - text: { ru: "> [!hint hidden] текст", en: "> [!hint hidden] text" }
+    reference_answer:
+      ru: >
+        Минус после типа (`-`) = свёрнут. Плюс (`+`) = развёрнут но сворачиваемый.
+      en: >
+        Minus after the type (`-`) = collapsed. Plus (`+`) = expanded but collapsible.

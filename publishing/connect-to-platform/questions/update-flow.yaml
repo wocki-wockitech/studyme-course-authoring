@@ -1,0 +1,26 @@
+# Converted from flat questions.yaml → questions/ directory format with i18n
+id: a52c02d1-6dee-4012-9961-739a0b5145c4
+difficulty: 2
+tags: []
+
+variants:
+  - type: multiple_choice
+    text:
+      ru: "Как обновить уже опубликованный курс для студентов?"
+      en: "How do you update an already published course for students?"
+    options:
+      - text: { ru: "Нажать 'Обновить' в панели администратора", en: "Click 'Update' in the admin panel" }
+      - text: { ru: "Создать новый тег и пушнуть (или нажать Sync)", en: "Create a new tag and push (or click Sync)" }
+        correct: true
+        feedback: { ru: "Прогресс студентов сохраняется благодаря UUID.", en: "Student progress is preserved thanks to UUIDs." }
+      - text: { ru: "Удалить курс и подключить заново", en: "Delete the course and reconnect" }
+      - text: { ru: "Отправить запрос в поддержку", en: "Submit a support request" }
+    reference_answer:
+      ru: >
+        Создаёте новый тег (например v1.1.0), пушите с --tags.
+        Платформа подхватит через webhook или кнопку Sync.
+        Прогресс студентов сохраняется благодаря UUID.
+      en: >
+        Create a new tag (e.g. v1.1.0), push with --tags.
+        The platform picks it up via webhook or the Sync button.
+        Student progress is preserved thanks to UUIDs.

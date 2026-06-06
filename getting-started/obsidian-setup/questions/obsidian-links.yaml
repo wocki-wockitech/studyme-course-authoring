@@ -1,0 +1,18 @@
+# Converted from flat questions.yaml → questions/ directory format with i18n
+id: b81626f3-21f9-4554-a5fc-7b4551754d43
+difficulty: 1
+tags: []
+
+variants:
+  - type: true_false
+    text:
+      ru: "Шаблон настроен на стандартные markdown-ссылки [text](path), а не на Obsidian wiki-links [[page]]."
+      en: "The template is configured to use standard markdown links [text](path), not Obsidian wiki-links [[page]]."
+    correct: true
+    reference_answer:
+      ru: >
+        Верно. useMarkdownLinks: true в .obsidian/app.json.
+        Это нужно чтобы платформа понимала ссылки.
+      en: >
+        Correct. useMarkdownLinks: true in .obsidian/app.json.
+        This is needed so the platform can understand the links.
