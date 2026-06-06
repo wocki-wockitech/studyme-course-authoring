@@ -1,0 +1,23 @@
+# Converted from flat questions.yaml → questions/ directory format with i18n
+id: 3b0db993-f4a9-43ee-a84e-30bc6eaaec5b
+difficulty: 1
+tags: []
+
+variants:
+  - type: multiple_choice
+    text:
+      ru: "Что именно индексирует платформа?"
+      en: "What exactly does the platform index?"
+    options:
+      - text: { ru: "Каждый коммит в main", en: "Every commit to main" }
+      - text: { ru: "Только Git-теги", en: "Only Git tags" }
+        correct: true
+      - text: { ru: "Только PR в main", en: "Only PRs to main" }
+      - text: { ru: "Все ветки", en: "All branches" }
+    reference_answer:
+      ru: >
+        Платформа индексирует только теги Git. Промежуточные коммиты
+        в main студентам не видны.
+      en: >
+        The platform only indexes Git tags. Intermediate commits
+        to main are not visible to students.

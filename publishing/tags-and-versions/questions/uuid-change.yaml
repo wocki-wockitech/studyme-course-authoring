@@ -1,0 +1,18 @@
+# Converted from flat questions.yaml → questions/ directory format with i18n
+id: f98c1006-7e05-4f15-b3ff-493215ea2080
+difficulty: 2
+tags: []
+
+variants:
+  - type: true_false
+    text:
+      ru: "Можно безопасно изменить UUID урока если переименовали папку."
+      en: "You can safely change a lesson's UUID if you renamed the folder."
+    correct: false
+    reference_answer:
+      ru: >
+        Нет! UUID никогда не меняется. Переименование папки меняет slug (URL),
+        но UUID должен остаться прежним. Иначе прогресс студентов потеряется.
+      en: >
+        No! UUID never changes. Renaming the folder changes the slug (URL),
+        but the UUID must remain the same. Otherwise student progress will be lost.
