@@ -1,0 +1,23 @@
+# Converted from flat questions.yaml → questions/ directory format with i18n
+id: 721c14c8-dfd6-416e-bf57-d37203ea872b
+difficulty: 1
+tags: []
+
+questions:
+  - type: multiple_choice
+    text:
+      ru: "В новом формате, как отмечается правильный вариант?"
+      en: "In the new format, how is the correct option marked?"
+    options:
+      - text: { ru: "Полем correct: <индекс> на уровне вопроса", en: "With a correct: <index> field at the question level" }
+      - text: { ru: "Полем correct: true на самом варианте", en: "With correct: true on the option itself" }
+        correct: true
+        feedback: { ru: "Верно! correct: true ставится на правильном варианте.", en: "Correct! correct: true is placed on the right option." }
+      - text: { ru: "Первый вариант в списке всегда правильный", en: "The first option in the list is always correct" }
+    reference_answer:
+      ru: >
+        correct: true ставится на самом варианте ответа.
+        Для нескольких правильных — на каждом из них.
+      en: >
+        correct: true is placed on the answer option itself.
+        For multiple correct answers — on each of them.

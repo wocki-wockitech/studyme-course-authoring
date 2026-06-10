@@ -49,7 +49,7 @@ StudyMe использует Obsidian-синтаксис callouts. Что вид
 
 | Синтаксис | Что делает |
 |-----------|-----------|
-| `> [!quiz] slug` | Встраивает вопрос из questions.yaml |
+| `> [!card] slug` | Встраивает вопрос из questions.yaml |
 | `> [!challenge] slug` | Встраивает код-задачу (V3) |
 | `> [!sandbox] lang` | Встраивает песочницу (V3) |
 
@@ -68,6 +68,6 @@ graph LR
 
 Работает и в Obsidian (с плагином), и на платформе.
 
-> [!quiz] callout-syntax
+> [!card] callout-syntax
 
-> [!quiz] quiz-callout-syntax
+> [!card] quiz-callout-syntax

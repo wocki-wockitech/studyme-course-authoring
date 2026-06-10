@@ -71,6 +71,6 @@ Lesson text...
 > The lesson/block slug is **its folder name**, not a YAML field.
 > Renamed the folder = changed the slug. The UUID stays the same.
 
-> [!quiz] structure-hierarchy
+> [!card] structure-hierarchy
 
-> [!quiz] block-yaml-purpose
+> [!card] block-yaml-purpose

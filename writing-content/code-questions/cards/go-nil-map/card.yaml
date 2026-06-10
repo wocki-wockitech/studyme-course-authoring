@@ -1,0 +1,28 @@
+id: f1a2b3c4-3333-4444-aaaa-000000000003
+difficulty: 2
+tags: [go, maps, runtime, panic]
+
+questions:
+  - type: multiple_choice
+    text:
+      ru: "Что произойдёт при выполнении этого кода?"
+      en: "What will happen when this code runs?"
+    file: main.go
+    options:
+      - text: { ru: "Выведет 42", en: "Will print 42" }
+      - text: { ru: "Ошибка компиляции", en: "Compilation error" }
+        feedback:
+          ru: "Код синтаксически верен, ошибка в runtime."
+          en: "Code is syntactically valid, error at runtime."
+      - text: "panic: assignment to entry in nil map"
+        correct: true
+        feedback:
+          ru: "Запись в nil map вызывает panic. Нужно: m = make(map[string]int)"
+          en: "Writing to nil map panics. Need: m = make(map[string]int)"
+      - text: { ru: "Ничего не произойдёт", en: "Nothing will happen" }
+
+  - type: true_false
+    text:
+      ru: "Запись в неинициализированную (nil) map в Go вызывает panic."
+      en: "Writing to an uninitialized (nil) map in Go causes a panic."
+    correct: true

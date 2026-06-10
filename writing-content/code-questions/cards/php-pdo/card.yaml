@@ -1,0 +1,46 @@
+id: f1a2b3c4-eeee-4444-aaaa-000000000014
+difficulty: 2
+tags: [php, pdo, sql, prepared-statements]
+
+questions:
+  - type: code_fill
+    text:
+      ru: "Дополните PDO-запрос с prepared statement:"
+      en: "Complete the PDO query with a prepared statement:"
+    file: query.php
+    slots:
+      - answer: ["prepare"]
+        hints:
+          - { ru: "Метод PDO для подготовки SQL-запроса", en: "PDO method to prepare an SQL query" }
+      - answer: ["DESC", "ASC"]
+        hints:
+          - { ru: "Направление сортировки по цене", en: "Sort direction by price" }
+      - answer: ["bindValue", "bindParam"]
+        hints:
+          - { ru: "Метод для привязки значения к параметру :min_price", en: "Method to bind value to :min_price parameter" }
+      - answer: [":min_price", "'min_price'", "':min_price'"]
+        hints:
+          - { ru: "Имя плейсхолдера из SQL-запроса", en: "Placeholder name from the SQL query" }
+      - answer: ["fetchAll"]
+        hints:
+          - { ru: "Метод для получения всех строк результата", en: "Method to fetch all result rows" }
+
+  - type: multiple_choice
+    text:
+      ru: "Зачем использовать prepared statements вместо конкатенации строк в SQL?"
+      en: "Why use prepared statements instead of string concatenation in SQL?"
+    options:
+      - text: { ru: "Быстрее выполняются", en: "Faster execution" }
+      - text: { ru: "Защита от SQL-инъекций", en: "Protection against SQL injection" }
+        correct: true
+        feedback:
+          ru: "Prepared statements разделяют SQL-код и данные, что исключает SQL-инъекции."
+          en: "Prepared statements separate SQL code from data, preventing SQL injection."
+      - text: { ru: "Меньше кода", en: "Less code" }
+      - text: { ru: "Работают без подключения к БД", en: "Work without DB connection" }
+
+  - type: true_false
+    text:
+      ru: "PDO::FETCH_ASSOC возвращает результат как ассоциативный массив."
+      en: "PDO::FETCH_ASSOC returns results as an associative array."
+    correct: true

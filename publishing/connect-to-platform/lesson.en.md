@@ -43,6 +43,6 @@ When you want to update a published course:
 
 Students will see the updated content automatically. Their progress is preserved — we match by UUID.
 
-> [!quiz] connect-steps
+> [!card] connect-steps
 
-> [!quiz] update-flow
+> [!card] update-flow

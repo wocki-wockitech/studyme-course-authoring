@@ -44,6 +44,6 @@ graph TD
 
 On the StudyMe platform this renders the same way.
 
-> [!quiz] obsidian-links
+> [!card] obsidian-links
 
-> [!quiz] assets-folder
+> [!card] assets-folder

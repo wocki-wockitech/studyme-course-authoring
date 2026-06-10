@@ -49,7 +49,7 @@ Three special callout types for StudyMe:
 
 | Syntax | What it does |
 |--------|-------------|
-| `> [!quiz] slug` | Embeds a question from questions.yaml |
+| `> [!card] slug` | Embeds a question from questions.yaml |
 | `> [!challenge] slug` | Embeds a code challenge (V3) |
 | `> [!sandbox] lang` | Embeds a sandbox (V3) |
 
@@ -68,6 +68,6 @@ graph LR
 
 Works in both Obsidian (with plugin) and on the platform.
 
-> [!quiz] callout-syntax
+> [!card] callout-syntax
 
-> [!quiz] quiz-callout-syntax
+> [!card] quiz-callout-syntax

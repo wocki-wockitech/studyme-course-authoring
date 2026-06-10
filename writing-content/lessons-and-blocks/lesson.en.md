@@ -65,6 +65,6 @@ Block 1 (available)
 Block 2 (locked — unlocks after Block 1 test)
 ```
 
-> [!quiz] add-lesson-steps
+> [!card] add-lesson-steps
 
-> [!quiz] lesson-progression
+> [!card] lesson-progression

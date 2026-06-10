@@ -1,0 +1,23 @@
+# Converted from flat questions.yaml → questions/ directory format with i18n
+id: 2eabceae-51e2-4440-95b8-51b44e38af5d
+difficulty: 1
+tags: []
+
+questions:
+  - type: multiple_choice
+    text:
+      ru: "Куда попадают картинки при перетаскивании в Obsidian?"
+      en: "Where do images go when dragged into Obsidian?"
+    options:
+      - text: { ru: "В корень репозитория", en: "To the repository root" }
+      - text: { ru: "В папку assets/", en: "To the assets/ folder" }
+        correct: true
+      - text: { ru: "В папку images/", en: "To the images/ folder" }
+      - text: { ru: "Рядом с lesson.md", en: "Next to lesson.md" }
+    reference_answer:
+      ru: >
+        Настройка attachmentFolderPath: ./assets перенаправляет все
+        вложения в папку assets/.
+      en: >
+        The attachmentFolderPath: ./assets setting redirects all
+        attachments to the assets/ folder.
