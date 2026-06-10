@@ -49,7 +49,7 @@ Three special callout types for StudyMe:
 
 | Syntax | What it does |
 |--------|-------------|
-| `> [!card] slug` | Embeds a question from questions.yaml |
+| `> [!card] slug` | Embeds a question from cards/ |
 | `> [!challenge] slug` | Embeds a code challenge (V3) |
 | `> [!sandbox] lang` | Embeds a sandbox (V3) |
 

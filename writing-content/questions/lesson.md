@@ -6,7 +6,7 @@ estimated_minutes: 8
 
 # Вопросы
 
-Вопросы живут в `questions.yaml` рядом с `lesson.md`. Поддерживаемые типы:
+Вопросы живут в `cards/` рядом с `lesson.md`. Поддерживаемые типы:
 
 ## multiple_choice
 

@@ -17,7 +17,7 @@ my-course/
 │   ├── block.yaml           ← block settings: title, lesson order, test
 │   ├── lesson-name/
 │   │   ├── lesson.md        ← lesson content (markdown + frontmatter)
-│   │   └── questions.yaml   ← quiz questions
+│   │   └── cards/   ← quiz questions
 │   └── another-lesson/
 └── another-block/
 ```

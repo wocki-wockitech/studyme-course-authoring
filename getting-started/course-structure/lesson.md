@@ -17,7 +17,7 @@ my-course/
 │   ├── block.yaml           ← настройки блока: название, порядок уроков, тест
 │   ├── lesson-name/
 │   │   ├── lesson.md        ← контент урока (markdown + frontmatter)
-│   │   └── questions.yaml   ← вопросы для проверки
+│   │   └── cards/   ← вопросы для проверки
 │   └── another-lesson/
 └── another-block/
 ```

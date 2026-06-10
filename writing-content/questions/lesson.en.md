@@ -6,7 +6,7 @@ estimated_minutes: 8
 
 # Questions
 
-Questions live in `questions.yaml` next to `lesson.md`. Supported types:
+Questions live in `cards/` next to `lesson.md`. Supported types:
 
 ## multiple_choice
 

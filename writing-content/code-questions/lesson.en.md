@@ -10,7 +10,7 @@ Two new question types for testing code comprehension:
 
 ## code_fill — complete the code
 
-The student sees a real file with blanks (`___`) and fills them in. The code is stored as a real file (`.go`, `.py`, `.js`, etc.), and `question.yaml` contains the answers and hints.
+The student sees a real file with blanks (`___`) and fills them in. The code is stored as a real file (`.go`, `.py`, `.js`, etc.), and `card.yaml` contains the answers and hints.
 
 Slot marker: `___` (three underscores). Slots are numbered top to bottom.
 

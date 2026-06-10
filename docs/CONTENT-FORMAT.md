@@ -11,7 +11,7 @@ Full schema for everything in a StudyMe course repository.
 │   ├── block.yaml              ← REQUIRED for each block
 │   └── <lesson-slug>/
 │       ├── lesson.md           ← REQUIRED for each lesson
-│       ├── questions.yaml      ← optional, but recommended
+│       ├── cards/      ← optional, but recommended
 │       └── challenges/
 │           └── <challenge-slug>/
 │               ├── challenge.yaml  ← REQUIRED for each challenge
@@ -104,7 +104,7 @@ Supported types: `note`, `info`, `tip`, `important`, `success`, `check`,
 
 | Syntax | Renders |
 |--------|---------|
-| `> [!quiz] question-slug` | Inline quiz (single question from `questions.yaml`) |
+| `> [!card] question-slug` | Inline quiz (single question from `cards/`) |
 | `> [!challenge] challenge-slug` | Coding challenge (editor + tests) |
 | `> [!sandbox] go` | Runnable sandbox without tests |
 
@@ -144,7 +144,7 @@ the Mermaid plugin enabled.
 | `*text*` | Italic |
 | `` `code` `` | Inline code |
 
-## questions.yaml
+## cards/
 
 ```yaml
 questions:
