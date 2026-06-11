@@ -11,8 +11,7 @@ Full schema for everything in a StudyMe course repository.
 │   ├── block.yaml              ← REQUIRED for each block
 │   └── <lesson-slug>/
 │       ├── lesson.md           ← REQUIRED for each lesson
-│       ├── questions.yaml      ← optional, flat format (backward compatible)
-│       ├── questions/           ← optional, new format (one file per question)
+│       ├── cards/              ← optional, one file per question
 │       │   ├── <slug>.yaml
 │       │   └── ...
 │       └── challenges/
@@ -25,7 +24,7 @@ Full schema for everything in a StudyMe course repository.
 ## Slug rules
 
 - Slug = folder name for blocks, lessons, challenges
-- Slug for questions = `slug:` field in YAML entry
+- Slug for questions = file name (without .yaml) in `cards/`
 - Format: `[a-z0-9-]+` (lowercase, kebab-case, no underscores)
 - Length: 2-64 characters
 - Unique within parent (block within course, lesson within block, etc.)
@@ -107,7 +106,7 @@ Supported types: `note`, `info`, `tip`, `important`, `success`, `check`,
 
 | Syntax | Renders |
 |--------|---------|
-| `> [!quiz] question-slug` | Inline quiz (single question from `questions.yaml`) |
+| `> [!card] question-slug` | Inline quiz (single question from `cards/`) |
 | `> [!challenge] challenge-slug` | Coding challenge (editor + tests) |
 | `> [!sandbox] go` | Runnable sandbox without tests |
 
@@ -147,46 +146,31 @@ the Mermaid plugin enabled.
 | `*text*` | Italic |
 | `` `code` `` | Inline code |
 
-## questions.yaml
+## cards/ directory
 
-```yaml
-questions:
-  - id:              # REQUIRED, auto-filled
-    slug: my-q       # REQUIRED, unique within lesson
-    type: ...        # REQUIRED: see types below
-    difficulty: 2    # REQUIRED, 1-5
-    text: "..."      # REQUIRED
-    tags: []         # optional
-    reference_answer: "..."  # optional, shown after answer
-    # ...type-specific fields...
-```
-
-## questions/ directory (new format)
-
-Alternative to the flat `questions.yaml`. One file per question, supports
-multiple variants (alternative formulations) and i18n.
+One file per question concept, supports multiple questions (alternative
+formulations) and i18n.
 
 ```
 lesson-slug/
 ├── lesson.md
-├── questions.yaml       ← flat format (backward compatible)
-└── questions/           ← new format (one file per question)
+└── cards/
     ├── source-of-truth.yaml
     ├── template-naming.yaml
     └── obsidian-links.yaml
 ```
 
-Both formats can coexist — slugs are merged. Slug = file name without `.yaml`.
+Slug = file name without `.yaml`.
 
-### Question file structure
+### Card file structure
 
 ```yaml
-# questions/<slug>.yaml
+# cards/<slug>.yaml
 id: ""                    # REQUIRED, auto-filled, never change
 difficulty: 2             # REQUIRED, 1-5
 tags: [git, basics]       # optional
 
-variants:
+questions:
   - type: multiple_choice
     text:
       ru: "Вопрос?"
@@ -206,13 +190,13 @@ Any text field accepts either:
 
 Single-language courses use plain strings — zero overhead.
 
-### Variants
+### Questions (alternative formulations)
 
-`variants[]` — array of alternative formulations of the same concept.
+`questions[]` — array of alternative formulations of the same concept.
 
-- At display time, a random variant is chosen
-- Same `id` per concept — SR is tied to the question, not the variant
-- `difficulty` and `tags` are shared across all variants
+- At display time, a random question is chosen
+- Same `id` per concept — SR is tied to the card, not the question
+- `difficulty` and `tags` are shared across all questions
 
 ### Type: `multiple_choice`
 
@@ -269,7 +253,7 @@ type: git_interactive
 challenge_slug: my-git-task    # REQUIRED, slug in challenges/
 ```
 
-### Type: `ordering` (new)
+### Type: `ordering`
 
 Students arrange items in the correct order. The correct order = order in the file.
 
@@ -293,7 +277,7 @@ With i18n:
 
 Students see items in a shuffled order and rearrange them.
 
-### Type: `matching` (new)
+### Type: `matching`
 
 Students connect left items to right items.
 
@@ -309,7 +293,7 @@ Students connect left items to right items.
     - "Web server"
 ```
 
-### Type: `categorize` (new)
+### Type: `categorize`
 
 Students distribute items into groups.
 
