@@ -39,11 +39,11 @@ graph TD
     A[course.yaml] --> B[block.yaml]
     B --> C[lesson.md]
     B --> D[lesson.md]
-    C --> E[questions.yaml]
+    C --> E[cards/]
 ```
 
 On the StudyMe platform this renders the same way.
 
-> [!quiz] obsidian-links
+> [!card] obsidian-links
 
-> [!quiz] assets-folder
+> [!card] assets-folder

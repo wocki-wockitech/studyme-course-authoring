@@ -46,6 +46,6 @@ graph LR
     F --> G[Course available to students]
 ```
 
-> [!quiz] uuid-change
+> [!card] uuid-change
 
-> [!quiz] platform-indexing
+> [!card] platform-indexing

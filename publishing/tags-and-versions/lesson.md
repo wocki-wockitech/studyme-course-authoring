@@ -46,6 +46,6 @@ graph LR
     F --> G[Курс доступен студентам]
 ```
 
-> [!quiz] uuid-change
+> [!card] uuid-change
 
-> [!quiz] platform-indexing
+> [!card] platform-indexing

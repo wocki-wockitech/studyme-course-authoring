@@ -1,0 +1,37 @@
+id: f1a2b3c4-dddd-4444-aaaa-000000000013
+difficulty: 2
+tags: [kubernetes, yaml, deployment]
+
+questions:
+  - type: code_fill
+    text:
+      ru: "Дополните Kubernetes Deployment манифест:"
+      en: "Complete the Kubernetes Deployment manifest:"
+    file: deployment.yaml
+    slots:
+      - answer: ["Deployment"]
+        hints:
+          - { ru: "Тип ресурса для управления подами", en: "Resource type for managing pods" }
+      - answer: ["3", "2", "1"]
+        hints:
+          - { ru: "Количество реплик пода", en: "Number of pod replicas" }
+      - answer: ["myapp"]
+        hints:
+          - { ru: "Label должен совпадать с selector", en: "Label must match the selector" }
+      - answer: ["8080", "80", "3000"]
+        hints:
+          - { ru: "Порт на котором слушает контейнер", en: "Port the container listens on" }
+
+  - type: matching
+    text:
+      ru: "Сопоставьте поля Deployment с их назначением:"
+      en: "Match Deployment fields with their purpose:"
+    pairs:
+      - left: "replicas"
+        right: { ru: "Количество подов", en: "Number of pods" }
+      - left: "selector.matchLabels"
+        right: { ru: "Какие поды принадлежат этому Deployment", en: "Which pods belong to this Deployment" }
+      - left: "template.spec.containers"
+        right: { ru: "Описание контейнеров в поде", en: "Container definitions in a pod" }
+    distractors:
+      - { ru: "Ограничения ресурсов CPU", en: "CPU resource limits" }

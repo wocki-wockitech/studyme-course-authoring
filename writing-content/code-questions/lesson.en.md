@@ -10,7 +10,7 @@ Two new question types for testing code comprehension:
 
 ## code_fill — complete the code
 
-The student sees a real file with blanks (`___`) and fills them in. The code is stored as a real file (`.go`, `.py`, `.js`, etc.), and `question.yaml` contains the answers and hints.
+The student sees a real file with blanks (`___`) and fills them in. The code is stored as a real file (`.go`, `.py`, `.js`, etc.), and `card.yaml` contains the answers and hints.
 
 Slot marker: `___` (three underscores). Slots are numbered top to bottom.
 
@@ -22,26 +22,26 @@ The student sees code and writes what each print/println will output. Blanks are
 
 Try the ones below:
 
-> [!quiz] go-sum-function
+> [!card] go-sum-function
 
-> [!quiz] python-list-ops
+> [!card] python-list-ops
 
-> [!quiz] go-http-handler
+> [!card] go-http-handler
 
-> [!quiz] js-async-await
+> [!card] js-async-await
 
-> [!quiz] rust-ownership
+> [!card] rust-ownership
 
-> [!quiz] sql-join
+> [!card] sql-join
 
-> [!quiz] docker-multistage
+> [!card] docker-multistage
 
-> [!quiz] bash-script
+> [!card] bash-script
 
-> [!quiz] ts-generics
+> [!card] ts-generics
 
-> [!quiz] yaml-k8s
+> [!card] yaml-k8s
 
-> [!quiz] php-pdo
+> [!card] php-pdo
 
-> [!quiz] go-nil-map
+> [!card] go-nil-map

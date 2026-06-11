@@ -6,7 +6,7 @@ estimated_minutes: 8
 
 # Questions
 
-Questions live in `questions.yaml` next to `lesson.md`. Supported types:
+Questions live in `cards/` next to `lesson.md`. Supported types:
 
 ## multiple_choice
 
@@ -66,18 +66,18 @@ why a given option is right or wrong.
 
 > [!info] Question slug
 > The slug is needed to reference the question from markdown via the quiz directive.
-> Format: `> [!quiz] <slug>`. One slug = one question, unique within a lesson.
+> Format: `> [!card] <slug>`. One slug = one question, unique within a lesson.
 
 ## Embedding in a lesson
 
 In `lesson.md`, insert a callout with the question slug:
 
 ```markdown
-> [!quiz] my-question
+> [!card] my-question
 ```
 
 The platform will render it as an interactive widget with answer options.
 
-> [!quiz] question-index
+> [!card] question-index
 
-> [!quiz] question-slug-scope
+> [!card] question-slug-scope

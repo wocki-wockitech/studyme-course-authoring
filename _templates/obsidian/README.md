@@ -12,7 +12,7 @@ manually. These are inline snippets you insert into an open file.
 | Template | Inserts |
 |----------|---------|
 | `lesson-frontmatter.md` | YAML frontmatter for a new lesson |
-| `question-multiple-choice.md` | One MC question entry for `questions.yaml` |
+| `question-multiple-choice.md` | One MC question entry for `cards/` |
 | `question-true-false.md` | One T/F question entry |
 | `question-free-text.md` | One free-text question entry |
 | `question-coding.md` | One coding question entry |

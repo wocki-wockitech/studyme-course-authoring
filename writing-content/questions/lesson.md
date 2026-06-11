@@ -6,7 +6,7 @@ estimated_minutes: 8
 
 # Вопросы
 
-Вопросы живут в `questions.yaml` рядом с `lesson.md`. Поддерживаемые типы:
+Вопросы живут в `cards/` рядом с `lesson.md`. Поддерживаемые типы:
 
 ## multiple_choice
 
@@ -66,18 +66,18 @@ questions:
 
 > [!info] Slug вопроса
 > Slug нужен для ссылки из markdown через директиву quiz.
-> Формат: `> [!quiz] <slug>`. Один slug = один вопрос, уникальный в пределах урока.
+> Формат: `> [!card] <slug>`. Один slug = один вопрос, уникальный в пределах урока.
 
 ## Встраивание в урок
 
 В `lesson.md` вставьте callout с slug вопроса:
 
 ```markdown
-> [!quiz] my-question
+> [!card] my-question
 ```
 
 Платформа отрендерит его как интерактивный виджет с вариантами ответа.
 
-> [!quiz] question-index
+> [!card] question-index
 
-> [!quiz] question-slug-scope
+> [!card] question-slug-scope

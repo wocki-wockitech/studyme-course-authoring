@@ -1,0 +1,23 @@
+# Converted from flat questions.yaml → questions/ directory format with i18n
+id: 23882079-73f3-425e-84c2-838f208d0d49
+difficulty: 2
+tags: []
+
+questions:
+  - type: multiple_choice
+    text:
+      ru: "Slug вопроса должен быть уникальным в пределах:"
+      en: "A question slug must be unique within:"
+    options:
+      - text: { ru: "Всего курса", en: "The entire course" }
+      - text: { ru: "Блока", en: "A block" }
+      - text: { ru: "Урока", en: "A lesson" }
+        correct: true
+      - text: { ru: "Платформы", en: "The platform" }
+    reference_answer:
+      ru: >
+        Slug вопроса уникален в пределах урока. В разных уроках
+        могут быть одинаковые slug без конфликтов.
+      en: >
+        A question slug is unique within a lesson. Different lessons
+        can have the same slug without conflicts.

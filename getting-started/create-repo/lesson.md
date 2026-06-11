@@ -41,4 +41,4 @@ cd studyme-course-<topic>
 - `_templates/` — заготовки для копирования
 - `.github/workflows/` — автоматизация (UUID, валидация)
 
-> [!quiz] what-is-course-repo
+> [!card] what-is-course-repo

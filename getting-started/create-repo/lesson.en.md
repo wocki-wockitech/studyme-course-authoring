@@ -41,4 +41,4 @@ After these steps you have:
 - `_templates/` — boilerplates for copying
 - `.github/workflows/` — automation (UUID, validation)
 
-> [!quiz] what-is-course-repo
+> [!card] what-is-course-repo

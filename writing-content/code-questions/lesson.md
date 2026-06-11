@@ -10,7 +10,7 @@ estimated_minutes: 10
 
 ## code_fill — дополни код
 
-Студент видит реальный файл с пропусками (`___`) и заполняет их. Код хранится как настоящий файл (`.go`, `.py`, `.js`, и т.д.), а `question.yaml` содержит ответы и подсказки.
+Студент видит реальный файл с пропусками (`___`) и заполняет их. Код хранится как настоящий файл (`.go`, `.py`, `.js`, и т.д.), а `card.yaml` содержит ответы и подсказки.
 
 Маркер слота: `___` (три подчёркивания). Слоты нумеруются сверху вниз.
 
@@ -22,26 +22,26 @@ estimated_minutes: 10
 
 Попробуйте ниже:
 
-> [!quiz] go-sum-function
+> [!card] go-sum-function
 
-> [!quiz] python-list-ops
+> [!card] python-list-ops
 
-> [!quiz] go-http-handler
+> [!card] go-http-handler
 
-> [!quiz] js-async-await
+> [!card] js-async-await
 
-> [!quiz] rust-ownership
+> [!card] rust-ownership
 
-> [!quiz] sql-join
+> [!card] sql-join
 
-> [!quiz] docker-multistage
+> [!card] docker-multistage
 
-> [!quiz] bash-script
+> [!card] bash-script
 
-> [!quiz] ts-generics
+> [!card] ts-generics
 
-> [!quiz] yaml-k8s
+> [!card] yaml-k8s
 
-> [!quiz] php-pdo
+> [!card] php-pdo
 
-> [!quiz] go-nil-map
+> [!card] go-nil-map

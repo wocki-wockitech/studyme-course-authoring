@@ -1,0 +1,26 @@
+id: f1a2b3c4-6666-4444-aaaa-000000000006
+difficulty: 2
+tags: [javascript, async, await, fetch]
+
+questions:
+  - type: code_fill
+    text:
+      ru: "Дополните async-функцию для загрузки пользователя:"
+      en: "Complete the async function to fetch a user:"
+    file: fetch.js
+    slots:
+      - answer: ["await"]
+        hints:
+          - { ru: "Ключевое слово для ожидания Promise", en: "Keyword to wait for a Promise" }
+      - answer: ["ok"]
+        hints:
+          - { ru: "Свойство Response для проверки успешности (200-299)", en: "Response property to check success (200-299)" }
+      - answer: ["await"]
+        hints:
+          - { ru: "response.json() тоже возвращает Promise", en: "response.json() also returns a Promise" }
+
+  - type: true_false
+    text:
+      ru: "Функция с ключевым словом async всегда возвращает Promise."
+      en: "A function with the async keyword always returns a Promise."
+    correct: true

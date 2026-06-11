@@ -17,7 +17,7 @@ my-course/
 │   ├── block.yaml           ← настройки блока: название, порядок уроков, тест
 │   ├── lesson-name/
 │   │   ├── lesson.md        ← контент урока (markdown + frontmatter)
-│   │   └── questions.yaml   ← вопросы для проверки
+│   │   └── cards/   ← вопросы для проверки
 │   └── another-lesson/
 └── another-block/
 ```
@@ -71,6 +71,6 @@ estimated_minutes: 5
 > Slug урока/блока — это **имя его папки**, не поле в YAML.
 > Переименовал папку = изменил slug. UUID при этом не меняется.
 
-> [!quiz] structure-hierarchy
+> [!card] structure-hierarchy
 
-> [!quiz] block-yaml-purpose
+> [!card] block-yaml-purpose

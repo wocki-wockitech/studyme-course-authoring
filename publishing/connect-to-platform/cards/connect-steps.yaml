@@ -1,0 +1,24 @@
+# Converted from flat questions.yaml → questions/ directory format with i18n
+id: 76290b39-7036-40aa-8d67-f23c8deacde7
+difficulty: 1
+tags: []
+
+questions:
+  - type: multiple_choice
+    text:
+      ru: "Что нужно сделать ПЕРЕД подключением курса к платформе?"
+      en: "What must you do BEFORE connecting a course to the platform?"
+    options:
+      - text: { ru: "Создать PR в main", en: "Create a PR to main" }
+      - text: { ru: "Создать Git-тег (например v1.0.0)", en: "Create a Git tag (e.g. v1.0.0)" }
+        correct: true
+        feedback: { ru: "Платформа индексирует только теги. Без тега нечего индексировать.", en: "The platform only indexes tags. Without a tag there is nothing to index." }
+      - text: { ru: "Отправить email администратору", en: "Send an email to the administrator" }
+      - text: { ru: "Настроить CI/CD", en: "Set up CI/CD" }
+    reference_answer:
+      ru: >
+        Платформа индексирует только теги. Без тега нечего индексировать —
+        connect вернёт ошибку "no tags found".
+      en: >
+        The platform only indexes tags. Without a tag there is nothing to index —
+        connect will return a "no tags found" error.

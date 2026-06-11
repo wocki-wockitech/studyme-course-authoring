@@ -28,7 +28,7 @@ function example() {
 ## Section 2
 
 Use Obsidian callouts for tips, warnings, hints, and interactive widgets.
-See `_templates/question/questions.yaml` and `_templates/challenge/`
+See `_templates/question/cards/` and `_templates/challenge/`
 for available types.
 
 > [!tip] Authoring tip

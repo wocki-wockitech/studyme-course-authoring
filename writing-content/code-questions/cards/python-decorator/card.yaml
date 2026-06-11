@@ -1,0 +1,23 @@
+id: f1a2b3c4-9999-4444-aaaa-000000000009
+difficulty: 2
+tags: [python, decorators, functools, memoization]
+
+questions:
+  - type: code_fill
+    text:
+      ru: "Добавьте кеширование к рекурсивной функции Фибоначчи:"
+      en: "Add caching to the recursive Fibonacci function:"
+    file: cache.py
+    slots:
+      - answer: ["lru_cache"]
+        hints:
+          - { ru: "Декоратор из functools для мемоизации", en: "functools decorator for memoization" }
+      - answer: ["lru_cache", "lru_cache()"]
+        hints:
+          - { ru: "Тот же декоратор что и в import", en: "Same decorator as in the import" }
+
+  - type: true_false
+    text:
+      ru: "Декоратор @lru_cache кеширует результаты на основе аргументов функции."
+      en: "@lru_cache caches results based on function arguments."
+    correct: true

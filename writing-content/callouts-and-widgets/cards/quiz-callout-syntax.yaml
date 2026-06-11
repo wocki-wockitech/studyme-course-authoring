@@ -1,0 +1,24 @@
+# Converted from flat questions.yaml → questions/ directory format with i18n
+id: 490321fa-a726-4eda-b61f-3787bef88f00
+difficulty: 1
+tags: []
+
+questions:
+  - type: multiple_choice
+    text:
+      ru: "Как встроить вопрос с slug 'my-q' в текст урока?"
+      en: "How do you embed a question with slug 'my-q' into the lesson text?"
+    options:
+      - text: { ru: "> [!question] my-q", en: "> [!question] my-q" }
+      - text: { ru: "> [!quiz] my-q", en: "> [!quiz] my-q" }
+        correct: true
+        feedback: { ru: "Верно! Платформа заменяет это на интерактивный виджет.", en: "Correct! The platform replaces this with an interactive widget." }
+      - text: { ru: "{{quiz: my-q}}", en: "{{quiz: my-q}}" }
+      - text: { ru: "[quiz](my-q)", en: "[quiz](my-q)" }
+    reference_answer:
+      ru: >
+        Синтаксис встраивания вопроса: > [!quiz] slug.
+        Платформа заменяет это на интерактивный виджет.
+      en: >
+        Question embedding syntax: > [!quiz] slug.
+        The platform replaces this with an interactive widget.
