@@ -16,7 +16,7 @@ manually. These are inline snippets you insert into an open file.
 | `question-true-false.md` | One T/F question entry |
 | `question-free-text.md` | One free-text question entry |
 | `question-coding.md` | One coding question entry |
-| `directive-quiz.md` | `> [!quiz] slug` callout |
+| `directive-card.md` | `> [!card] slug` callout |
 | `directive-challenge.md` | `> [!challenge] slug` callout |
 | `directive-callouts.md` | All native Obsidian callout types |
 
