@@ -11,9 +11,7 @@ Full schema for everything in a StudyMe course repository.
 │   ├── block.yaml              ← REQUIRED for each block
 │   └── <lesson-slug>/
 │       ├── lesson.md           ← REQUIRED for each lesson
-│       ├── cards/              ← optional, one file per question
-│       │   ├── <slug>.yaml
-│       │   └── ...
+│       ├── cards/      ← optional, but recommended
 │       └── challenges/
 │           └── <challenge-slug>/
 │               ├── challenge.yaml  ← REQUIRED for each challenge
@@ -24,7 +22,7 @@ Full schema for everything in a StudyMe course repository.
 ## Slug rules
 
 - Slug = folder name for blocks, lessons, challenges
-- Slug for questions = file name (without .yaml) in `cards/`
+- Slug for questions = `slug:` field in YAML entry
 - Format: `[a-z0-9-]+` (lowercase, kebab-case, no underscores)
 - Length: 2-64 characters
 - Unique within parent (block within course, lesson within block, etc.)
@@ -146,57 +144,19 @@ the Mermaid plugin enabled.
 | `*text*` | Italic |
 | `` `code` `` | Inline code |
 
-## cards/ directory
-
-One file per question concept, supports multiple questions (alternative
-formulations) and i18n.
-
-```
-lesson-slug/
-├── lesson.md
-└── cards/
-    ├── source-of-truth.yaml
-    ├── template-naming.yaml
-    └── obsidian-links.yaml
-```
-
-Slug = file name without `.yaml`.
-
-### Card file structure
+## cards/
 
 ```yaml
-# cards/<slug>.yaml
-id: ""                    # REQUIRED, auto-filled, never change
-difficulty: 2             # REQUIRED, 1-5
-tags: [git, basics]       # optional
-
 questions:
-  - type: multiple_choice
-    text:
-      ru: "Вопрос?"
-      en: "Question?"
-    options:
-      - text: { ru: "Вариант A", en: "Option A" }
-        correct: true
-        feedback: { ru: "Верно!", en: "Correct!" }
-      - text: { ru: "Вариант B", en: "Option B" }
+  - id:              # REQUIRED, auto-filled
+    slug: my-q       # REQUIRED, unique within lesson
+    type: ...        # REQUIRED: see types below
+    difficulty: 2    # REQUIRED, 1-5
+    text: "..."      # REQUIRED
+    tags: []         # optional
+    reference_answer: "..."  # optional, shown after answer
+    # ...type-specific fields...
 ```
-
-### i18n (localized strings)
-
-Any text field accepts either:
-- **Plain string** → uses `default_language` of the course
-- **Map `{lang: text}`** → multi-language
-
-Single-language courses use plain strings — zero overhead.
-
-### Questions (alternative formulations)
-
-`questions[]` — array of alternative formulations of the same concept.
-
-- At display time, a random question is chosen
-- Same `id` per concept — SR is tied to the card, not the question
-- `difficulty` and `tags` are shared across all questions
 
 ### Type: `multiple_choice`
 
@@ -251,62 +211,6 @@ challenge_slug: my-challenge   # REQUIRED, slug in challenges/
 ```yaml
 type: git_interactive
 challenge_slug: my-git-task    # REQUIRED, slug in challenges/
-```
-
-### Type: `ordering`
-
-Students arrange items in the correct order. The correct order = order in the file.
-
-```yaml
-- type: ordering
-  text: "Arrange in correct order:"
-  items:
-    - "Step 1"
-    - "Step 2"
-    - "Step 3"
-```
-
-With i18n:
-```yaml
-- type: ordering
-  text: { ru: "Расположите в правильном порядке:", en: "Arrange correctly:" }
-  items:
-    - { ru: "Шаг 1", en: "Step 1" }
-    - { ru: "Шаг 2", en: "Step 2" }
-```
-
-Students see items in a shuffled order and rearrange them.
-
-### Type: `matching`
-
-Students connect left items to right items.
-
-```yaml
-- type: matching
-  text: "Match each term:"
-  pairs:
-    - left: "Git"
-      right: "Version control"
-    - left: "PostgreSQL"
-      right: "Database"
-  distractors:          # extra items on the right (optional)
-    - "Web server"
-```
-
-### Type: `categorize`
-
-Students distribute items into groups.
-
-```yaml
-- type: categorize
-  text: "Sort by category:"
-  categories:
-    - name: "SQL"
-      items: ["PostgreSQL", "MySQL"]
-    - name: "NoSQL"
-      items: ["Redis", "MongoDB"]
-  distractors:          # items not belonging to any group (optional)
-    - "Nginx"
 ```
 
 ## challenge.yaml
