@@ -1,0 +1,23 @@
+id: ""
+term:
+  ru: "Определение"
+  en: "Definition"
+aliases:
+  - "определение"
+  - "определения"
+  - "definition"
+  - "definitions"
+tags: [glossary, authoring]
+definition:
+  ru: |
+    Термин глоссария, описанный в файле defs/<slug>.yaml.
+    Автоматически подсвечивается в тексте уроков и попадает в SR-повторение.
+  en: |
+    A glossary term described in a defs/<slug>.yaml file.
+    Automatically highlighted in lesson text and added to SR review.
+example:
+  ru: |
+    defs/goroutine.yaml → авто-подсветка слова "горутина" в тексте
+  en: |
+    defs/goroutine.yaml → auto-highlights the word "goroutine" in text
+related: []

@@ -1,43 +1,15 @@
-# Auto-fills missing `id:` UUIDs in course.yaml, block.yaml, lesson.md
-# (frontmatter), questions.yaml entries, and challenge.yaml.
-#
-# Triggered on PRs that touch content. The action mutates files in-place
-# and pushes a single fixup commit back to the PR branch.
+# Calls the reusable workflow from the template repo.
+# Logic lives in studyme-course-template — no need to sync this file.
+# Runs on every PR — the action is idempotent (no-op if all IDs filled).
 
 name: StudyMe — Auto-fill IDs
 
 on:
   pull_request:
-    paths:
-      - "course.yaml"
-      - "**/block.yaml"
-      - "**/lesson.md"
-      - "**/questions.yaml"
-      - "**/challenge.yaml"
 
 jobs:
   fill-ids:
-    runs-on: ubuntu-latest
+    uses: wocki-wockitech/studyme-course-template/.github/workflows/studyme-id.yml@main
     permissions:
       contents: write
       pull-requests: write
-    steps:
-      - name: Checkout PR branch
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0
-
-      - name: Fill missing IDs
-        uses: wocki-wockitech/studyme-course-tools@v1
-        with:
-          mode: fix-ids
-          # Will assign UUID v4 to entries missing the `id:` field
-          # in any tracked content file. Existing IDs are preserved.
-
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: auto-fill missing StudyMe IDs"
-          commit_user_name: studyme-bot
-          commit_user_email: bot@studyme.wockitech.local
