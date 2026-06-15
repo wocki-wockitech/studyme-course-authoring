@@ -7,9 +7,11 @@ name: StudyMe — Auto-fill IDs
 on:
   pull_request:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   fill-ids:
-    uses: wocki-wockitech/studyme-course-template/.github/workflows/studyme-id.yml@main
-    permissions:
-      contents: write
-      pull-requests: write
+    uses: wocki-wockitech/studyme-course-template/.github/workflows/_reusable-fill-ids.yml@main
+    secrets: inherit
