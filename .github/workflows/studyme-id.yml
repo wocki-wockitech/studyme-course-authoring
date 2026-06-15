@@ -13,5 +13,5 @@ permissions:
 
 jobs:
   fill-ids:
-    uses: wocki-wockitech/studyme-course-template/.github/workflows/studyme-id.yml@main
+    uses: wocki-wockitech/studyme-course-template/.github/workflows/_reusable-fill-ids.yml@main
     secrets: inherit
