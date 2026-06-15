@@ -15,5 +15,19 @@
   "markdown-importer": false,
   "audio-recorder": false,
   "workspaces": false,
-  "random-note": false
+  "random-note": false,
+  "canvas": true,
+  "footnotes": false,
+  "page-preview": true,
+  "daily-notes": true,
+  "note-composer": true,
+  "slash-command": false,
+  "bookmarks": true,
+  "zk-prefixer": false,
+  "slides": false,
+  "file-recovery": true,
+  "publish": false,
+  "sync": true,
+  "bases": true,
+  "webviewer": false
 }

@@ -42,7 +42,6 @@ file into your lesson's `cards/`.
 → See [`question/cards/`](question/cards/)
 
 ### Challenges
-// upd test :: todo delete this
 
 Code challenges (coding) and Git-interactive challenges. Each is a
 folder under your lesson's `challenges/`.

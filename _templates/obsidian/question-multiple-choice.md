@@ -4,12 +4,9 @@
     difficulty: 2
     text: ""
     options:
-      - text: ""
-        correct: true
-        feedback: ""
-      - text: ""
-        feedback: ""
-      - text: ""
-        feedback: ""
+      - ""
+      - ""
+      - ""
+    correct: 0
     reference_answer: >
       
