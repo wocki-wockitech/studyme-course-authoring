@@ -1,16 +1,11 @@
 # Calls the reusable workflow from the template repo.
 # Logic lives in studyme-course-template — no need to sync this file.
+# Runs on every PR — the action is idempotent (no-op if all IDs filled).
 
 name: StudyMe — Auto-fill IDs
 
 on:
   pull_request:
-    paths:
-      - "course.yaml"
-      - "**/block.yaml"
-      - "**/lesson.md"
-      - "**/questions.yaml"
-      - "**/challenge.yaml"
 
 jobs:
   fill-ids:
