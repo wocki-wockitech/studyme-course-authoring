@@ -20,3 +20,11 @@ jobs:
         uses: wocki-wockitech/studyme-course-tools@main
         with:
           mode: lint
+          # Checks:
+          #   - course.yaml / block.yaml / lesson.md frontmatter schema
+          #   - all `id` fields are valid UUID v4
+          #   - no duplicate IDs within the course
+          #   - all referenced lesson/block slugs exist
+          #   - all `> [!quiz] slug` and `> [!challenge] slug` callouts resolve
+          #   - questions.yaml entries match expected shape per type
+          #   - challenges have all required files (template, tests, solution)
